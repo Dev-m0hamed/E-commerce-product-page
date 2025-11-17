@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-orange: hsl(26, 100%, 55%);
+  --color-pale-orange: hsl(25, 100%, 94%);
+  /* Neutral */
+  --color-very-dark-blue: hsl(220, 13%, 13%);
+  --color-dark-grayish-blue: hsl(219, 9%, 45%);
+  --color-grayish-blue: hsl(220, 14%, 75%);
+  --color-light-grayish-blue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black-lightbox: hsl(0 0% 0% / 0.75);
+  /* font */
+  --font-kumbh: "Kumbh Sans", sans-serif;
+  /* animation */
+  --animate-dropFade: drop-fade 0.8s ease forwards;
+  --animate-upFade: up-fade 0.5s ease forwards;
+  @keyframes drop-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(-32px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes up-fade {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-32px);
+    }
+  }
+}
