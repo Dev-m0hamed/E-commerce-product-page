@@ -1,6 +1,6 @@
 # E-commerce-product
 
-![Design preview for the E-commerce-product coding challenge](./preview.jpg)
+![Design preview for the E-commerce-product coding challenge](./desktop-preview.jpg)
 
 ## 👋 Welcome!
 
