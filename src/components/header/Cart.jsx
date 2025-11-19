@@ -3,6 +3,7 @@ import product from "../../assets/image-product-1-thumbnail.jpg";
 function Cart({ openCart, cart, setCart }) {
   return (
     <div
+      data-testid="cart"
       className={`absolute top-[115%] w-[94vw] left-1/2 -translate-x-1/2 bg-white rounded-lg shadow-2xl z-20 transition-all duration-300 md:w-[350px] md:top-[90%] md:left-full md:-translate-x-full ${
         openCart ? "animate-dropFade" : "invisible animate-upFade"
       }`}
@@ -30,6 +31,7 @@ function Cart({ openCart, cart, setCart }) {
                 </span>
               </div>
               <svg
+                data-testid="delete"
                 onClick={() => setCart(0)}
                 className="cursor-pointer"
                 width="14"

@@ -36,6 +36,7 @@ function ProductInfo({ setCart }) {
       <div className="flex flex-col gap-4 lg:flex-row">
         <div className="w-full bg-light-grayish-blue p-4 rounded-xl flex items-center justify-between font-bold lg:w-2/4">
           <svg
+            data-testid="minus"
             onClick={decrease}
             className="cursor-pointer"
             width="12"
@@ -51,8 +52,9 @@ function ProductInfo({ setCart }) {
             </defs>
             <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
           </svg>
-          <span>{quantity}</span>
+          <span data-testid="quantity">{quantity}</span>
           <svg
+            data-testid="plus"
             onClick={increase}
             className="cursor-pointer"
             width="12"

@@ -17,12 +17,14 @@ function Lightbox({ lightBox, setLightBox }) {
   };
   return (
     <section
+      data-testid="lightbox"
       className={`md:flex flex-col items-center justify-center fixed w-full h-screen inset-0 bg-black-lightbox z-60 transition-all duration-300 ${
         lightBox ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >
       <div>
         <svg
+          data-testid="close"
           onClick={() => setLightBox(false)}
           className="ml-auto mb-4 text-[#69707D] hover:text-orange cursor-pointer transition duration-300"
           width="14"

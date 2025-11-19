@@ -6,6 +6,7 @@ function Nav() {
   return (
     <div className="flex gap-5 items-center md:gap-8">
       <svg
+        data-testid="open-menu"
         onClick={() => setMenu(true)}
         className="self-end md:hidden cursor-pointer"
         width="16"
@@ -26,6 +27,7 @@ function Nav() {
         />
       </svg>
       <div
+        data-testid="overlay"
         onClick={() => setMenu(false)}
         className={`fixed inset-0 bg-black-lightbox z-50 transition-all duration-300 md:hidden ${
           menu ? "opacity-100 visible" : "opacity-0 invisible"
@@ -37,6 +39,7 @@ function Nav() {
         }`}
       >
         <svg
+          data-testid="close-menu"
           onClick={() => setMenu(false)}
           className="md:hidden cursor-pointer"
           width="14"
@@ -59,22 +62,34 @@ function Nav() {
             </a>
           </li>
           <li>
-            <a href="#" className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full">
+            <a
+              href="#"
+              className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full"
+            >
               Men
             </a>
           </li>
           <li>
-            <a href="#" className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full">
+            <a
+              href="#"
+              className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full"
+            >
               Women
             </a>
           </li>
           <li>
-            <a href="#" className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full">
+            <a
+              href="#"
+              className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#" className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full">
+            <a
+              href="#"
+              className="relative transition duration-300 hover:text-very-dark-blue md:before:absolute md:before:-bottom-[46px] md:before:left-1/2 md:before:-translate-x-1/2 md:before:h-[3px] md:before:w-0 md:before:bg-orange md:before:transition-all md:before:duration-300 hover:md:before:w-full"
+            >
               Contact
             </a>
           </li>

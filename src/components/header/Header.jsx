@@ -12,6 +12,7 @@ function Header({ cart, setCart }) {
       <div className="flex items-center gap-5 md:gap-8">
         <div className="relative cursor-pointer">
           <svg
+            data-testid="toggle-cart"
             onClick={() => setOpenCart(!openCart)}
             className="text-[#69707D] hover:text-black transition duration-300"
             width="22"
@@ -24,7 +25,10 @@ function Header({ cart, setCart }) {
               fillRule="nonzero"
             />
           </svg>
-          <span className="absolute -top-2 left-2.5 text-white text-[10px] text-center bg-orange rounded-[20px] px-1.5 cursor-pointer">
+          <span
+            data-testid="quantity"
+            className="absolute -top-2 left-2.5 text-white text-[10px] text-center bg-orange rounded-[20px] px-1.5 cursor-pointer"
+          >
             {cart > 0 && cart}
           </span>
         </div>
